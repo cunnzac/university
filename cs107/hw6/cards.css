@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  color: #111;
+}
+
+.comparison-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.feature-card {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 36px 28px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.feature-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.feature-card h2 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  color: #111111;
+}
+
+.feature-card .description {
+  color: #888888;
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+}
+
+.feature-card ul {
+  list-style: none;
+  margin-bottom: 28px;
+}
+
+.feature-card ul li {
+  font-size: 1rem;
+  color: #222222;
+  margin-bottom: 8px;
+}
+
+.feature-card button {
+  background-color: #2979ff;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 28px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.feature-card button:hover {
+  background-color: #0056b3;
+}
+
+@media (min-width: 768px) {
+  .comparison-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
